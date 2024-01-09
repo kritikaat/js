@@ -1,51 +1,51 @@
-// //singleton this are created using constructor funcctionn and call againnt o get same results some of members are private to it
-// //object.create 
+//singleton this are created using constructor funcctionn and call againnt o get same results some of members are private to it
+//object.create 
 
-// //it create only one instance of object at a time , and all members are public
-// //object literas
-// const mysym = Symbol("key1")
-// const mysym2 = Symbol("key1")
+//it create only one instance of object at a time , and all members are public
+//object literas
+const mysym = Symbol("key1")
+const mysym2 = Symbol("key1")
 
-// const user = {
-//     name: "kritika",
-//     "email address" : "thakkarkritika@gmail.com",//for accesing this kind of memeber of object the . method won't work so we have to acess it in another way
-//     //but only if it has space in between when it doesnt have space we can simply use dot
-//     "email": "hellouser@gmail.com",
-//     age: 18,
-//     [mysym]: "mykey1",
-//     [mysym2]: "mykey1",
-//     location: "gandhinagar",
-//     isLoggedIn : false,
-//     lastLogindays: [ "monday" , "friday "]
-// }
+const user = {
+    name: "kritika",
+     "email address" : "thakkarkritika@gmail.com",//for accesing this kind of memeber of object the . method won't work so we have to acess it in another way
+//but only if it has space in between when it doesnt have space we can simply use dot
+     "email": "hellouser@gmail.com",
+      age: 18,
+      [mysym]: "mykey1",
+      [mysym2]: "mykey1",
+      location: "gandhinagar",
+      isLoggedIn : false,
+      lastLogindays: [ "monday" , "friday "]
+  }
 
-// console.log(user.name);
-// console.log(user["name"]);
-// console.log(user["email address"]);
-// console.log(user["email address"]);
-// console.log(user.email);
+console.log(user.name);
+console.log(user["name"]);
+console.log(user["email address"]);
+console.log(user["email address"]);
+console.log(user.email);
 
-// //to acess the symbol
-// console.log([mysym])
-// console.log([mysym2])
+//to acess the symbol
+console.log([mysym])
+console.log([mysym2])
 
-// user.age = 17
-// //Object.freeze(user)
-// user.age = 19
-// console.log(user);
+user.age = 17
+//Object.freeze(user)
+user.age = 19
+console.log(user);
 
-// // user.greeting = function(){
-// //     console.log(`hello `);
-// // }
+user.greeting = function(){
+    console.log(`hello `);
+}
 
-// user.greeting = function () {
-//     console.log(`hello, ${this.name}`);
-// }
+user.greeting = function () {
+    console.log(`hello, ${this.name}`);
+}
 
-// //console.log(user.greeting)
-// console.log(user.greeting()); //i have freezed that object above that's why it was throwing an error that no function such as greeting is there!
-// //user.greeting()
-// //in  greeting functions you  log messages to the console but don't return anything, so they implicitly return undefined as an output after every console. But when we use return keyword in functions instead of console.log it will not output 'undefined'.
+//console.log(user.greeting)
+console.log(user.greeting()); //i have freezed that object above that's why it was throwing an error that no function such as greeting is there!
+//user.greeting()
+//in  greeting functions you  log messages to the console but don't return anything, so they implicitly return undefined as an output after every console. But when we use return keyword in functions instead of console.log it will not output 'undefined'.
 
 
 
